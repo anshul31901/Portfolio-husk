@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/indexstyle.css"  rel="stylesheet"/>
+    
+    <script src="scripts/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <title>Sign in</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="header">
+        <img src="img/IIITA_logo.png" alt="" width="120" height="120" />
+      </div>
+
+      <div class="signIn">
+        Sign in 
+      </div>
+      <div class="form">
+        
+        <label for="">Username or email address</label>
+        <input type="text" name="username" id="username" tabindex="1" />
+        
+        <label for="">Password
+          <a class="label-link" href="forgot_password/verify/verify.html"> Forgot password? </a>
+        </label>
+        <input type="password" name="password" id="password" tabindex="1" />
+        
+        <p style="color:red;" id="test"></p>
+        
+        <input
+          type="submit"
+          id="button"
+          name="commit"
+          value="Sign In"
+          tabindex="3"
+          onclick="validateForm()"
+          class="lastInput"
+        />
+
+      </div>
+
+      <div class="login-callout">
+          New User? <a href="register/verify/verify.html">Create an account.</a>
+      </div>
+
+      <div class="footer">
+          <ul>
+              <li><a href="">Terms</a></li>
+              <li><a href="">Privacy</a></li>
+              <li><a href="">Security</a></li>
+          </ul>
+      </div>
+    </div>
+  </body>
+</html>
